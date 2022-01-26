@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="css/site.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="" width="35" height="29" class="d-inline-block align-text-top">
+            Create Account
+          </a>
+          <ul class="nav justify-content-end">
+            
+          </ul>
+        </div>
+    </nav>
+
+    <div class="card border-dark text-center" style="margin: 5%;">
+      <div class="card-body">
+          <blockquote class="blockquote mb-0">
+              <h1>Create an Account</h1>
+
+              <form id="createAccountForm">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input id="email" type="text" class="form-control form-control-sm">
+                    <div class="form-text"></div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input id="username" type="text" class="form-control form-control-sm">
+                    <div class="form-text">Username must be 5 characters long.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input id="password" type="password" class="form-control form-control-sm">
+                    <div class="form-text">Password must be 6 characters long.</div>
+                </div>
+
+                <a href="login" class="btn btn-secondary btn-sm">Create account</a>
+            </form>
+          </blockquote>
+      </div>
+    </div>
+    
+
+    <div class = "footer">
+        <footer class = "fixed-bottom">© Abigail Gaver 2022</footer>
+    </div>
+
+<script src="../src/index.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
