@@ -4,13 +4,11 @@ const path = require('path')
 const router = express.Router()
 
 router.get('', (req, res) => {
-    const dir = path.join(__dirname,"../templates/index.html")
-    res.sendFile(dir)
+    res.render('index')
 })
 
 router.get('/index', (req, res) => {
-    const dir = path.join(__dirname,"../templates/index.html")
-    res.sendFile(dir)
+    res.render('index')
 })
 
 module.exports = router
