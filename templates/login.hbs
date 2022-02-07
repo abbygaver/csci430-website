@@ -2,11 +2,12 @@
 <html>
 <head>
   {{>head}}
+  <script defer src="/js/login.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index">
             <img src="images/logo.png" alt="" width="35" height="29" class="d-inline-block align-text-top">
             Login
           </a>
@@ -21,22 +22,24 @@
     <div class="card border-dark text-center" style="align-text: top; margin: 5%; padding: 15%;">
       <div class="card-body">
           <blockquote class="blockquote mb-0">
-              <h1>Login</h1>
-              <hr>
+            <h1>Login</h1>
+            <hr>
+            <form id = "loginForm">
               <div class="mb-3">
                 <label for="email" class="form-label">Email Address</label>
                 <input id="email" type="text" class="form-control form-control-sm">
-            </div>
+              </div>
 
-            <div class="mb-3">
+              <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
                 <input id="password" type="password" class="form-control form-control-sm">
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="font-size: small;">Forgot?</a>
-            </div>
+              </div>
             <hr>
 
-            <a href="main" class="btn btn-secondary btn-sm">Login</a>
-
+            <button class="btn btn-secondary btn-sm">Login</button>
+          </form>
+          <p id="message" class="message"></p>
           </blockquote>
       </div>
     </div>
